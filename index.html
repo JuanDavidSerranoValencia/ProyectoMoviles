@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulWear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <img src="images/logo.png" alt="SoulWear Logo" class="logo">
+        <h1 class="brand-name">SoulWear</h1>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#about">Sobre nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="home">
+        <div class="overlay">
+            <h1>Bienvenidos a SoulWear</h1>
+            <p>Ropa de segunda mano con estilo y energía única</p>
+            <button class="explore-btn" onclick="scrollToSection('products')">Explorar</button>
+        </div>
+    </header>
+
+  
+    <section id="products" class="section">
+        <h2>Descubre nuestra colección</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img/product1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>$25.00</p>
+                <button>Ver más</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>$25.00</p>
+                <button>Ver más</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>$25.00</p>
+                <button>Ver más</button>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="about" class="section about">
+        <h2>La energía detrás de cada prenda</h2>
+        <p>En SoulWear, creemos que cada prenda tiene una historia y energía única. Cada pieza que seleccionamos lleva consigo un estilo que conecta con quienes buscan autenticidad.</p>
+    </section>
+
+ 
+    <footer class="footer">
+        <p>Síguenos en redes sociales y mantente al tanto de nuestras novedades.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>&copy; 2024 SoulWear</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
