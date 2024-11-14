@@ -5,3 +5,7 @@ function scrollToSection(sectionId) {
         section.scrollIntoView({ behavior: "smooth" });
     }
 }
+
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
