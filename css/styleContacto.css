@@ -98,16 +98,16 @@ button:hover {
     background-color: #e67e22;
 }
 
-/* Estilo para el enlace que envuelve el botón */
+
 a button {
     text-decoration: none;
 }
 
-/* Estilos adicionales */
+
 footer {
     background-color: #222;
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 50px; /* Separación del contenido */
+    margin-top: 50px; 
 }
