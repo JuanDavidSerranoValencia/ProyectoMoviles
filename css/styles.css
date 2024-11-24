@@ -68,34 +68,47 @@
     color: white;
 }
 
-
 .nav-links.active {
     display: flex;
 }
 
 .home {
-    position: relative;
-    background-image: url('/images/fondo.png'); 
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    display: flex; /* Usamos flexbox para alinear los elementos lado a lado */
+    justify-content: space-between; /* Espacio entre los contenedores */
+    align-items: center; /* Alineamos verticalmente */
+    height: 70vh;
     color: rgb(255, 255, 255);
-    text-align: center;
-    padding-top: 80px;  
-    margin-top: 60px;   
-    padding-left: 20px; 
-    padding-right: 20px; 
-    box-sizing: border-box; 
-}
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
-.overlay h1 {
-    font-size: 48px;
+.image-container {
+    flex: 1; /* Toma el 50% del espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto;
+    max-width: 600px; /* Limita el tamaño máximo de la imagen */
+}
+
+.text-container {
+    flex: 1; /* Toma el 50% del espacio disponible */
+    text-align: center;
+    padding: 20px;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
 .explore-btn {
@@ -142,7 +155,7 @@
 }
 
 .product-card img {
-    width: 100%;
+    width: 60%; /* Hacer la imagen más pequeña */
     height: auto;
     border-radius: 8px;
 }
@@ -173,7 +186,6 @@
     background-color: #e67e22;
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
     .product-card {
         width: 45%;
