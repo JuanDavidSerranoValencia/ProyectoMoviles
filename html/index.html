@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoulWear</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" type="image/png" href="/images/FavIcon.png">   
+    <link rel="icon" type="image/png" href="/images/FavIcon.png">
 </head>
 <body>
     <nav class="navbar">
@@ -13,9 +13,7 @@
             <img src="/images/1.png" alt="SoulWear Logo" class="logo">
             <h1 class="brand-name">SoulWear</h1>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            ☰
-        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <ul class="nav-links">
             <li><a href="#">SoulWear</a></li>
             <li><a href="#products">Productos</a></li>
@@ -29,8 +27,8 @@
             <img src="/images/fondo.png" alt="Imagen principal" class="home-image">
         </div>
         <div class="text-container">
-            <h1 class="home-title">SoulWear</h1> 
-            <p class="subtitle">Vistiendo tu Alma, con energia y estilo</p> 
+            <h1 class="home-title">SoulWear</h1>
+            <p class="subtitle">Vistiendo tu Alma, con energía y estilo</p>
             <button class="explore-btn" onclick="scrollToSection('products')">Explorar</button>
         </div>
     </header>
@@ -40,19 +38,19 @@
             <h2>Descubre nuestra colección</h2>
         </div>
         <div class="product-grid">
-            <div class="product-card">
+            <div class="product-card" onclick="showPopup(1)">
                 <img src="/images/1.png" alt="Producto 1">
                 <h3>Producto 1</h3>
                 <p>$25.00</p>
                 <button>Ver más</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" onclick="showPopup(2)">
                 <img src="/images/ojos.png" alt="Producto 2">
                 <h3>Producto 2</h3>
                 <p>$30.00</p>
                 <button>Ver más</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" onclick="showPopup(3)">
                 <img src="/images/fondo.png" alt="Producto 3">
                 <h3>Producto 3</h3>
                 <p>$28.00</p>
@@ -77,6 +75,16 @@
         </div>
         <p>&copy; 2024 SoulWear</p>
     </footer>
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Detalle del producto">
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+            <p id="popup-price"></p>
+        </div>
+    </div>
 
     <script src="/JavaScript/scripts.js"></script>
 </body>
