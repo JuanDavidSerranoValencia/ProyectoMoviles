@@ -73,42 +73,49 @@
 }
 
 .home {
-    display: flex; /* Usamos flexbox para alinear los elementos lado a lado */
-    justify-content: space-between; /* Espacio entre los contenedores */
-    align-items: center; /* Alineamos verticalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 70vh;
     color: rgb(255, 255, 255);
-    margin-top: 80px;
+    margin-top: 100px; /* Aumenta el margen superior para bajar la imagen */
     margin-bottom: 30px;
 }
 
 .image-container {
-    flex: 1; /* Toma el 50% del espacio disponible */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px; /* Baja la imagen un poco */
 }
 
 .home-image {
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%;
     height: auto;
-    max-width: 600px; /* Limita el tamaño máximo de la imagen */
+    max-width: 600px;
 }
 
 .text-container {
-    flex: 1; /* Toma el 50% del espacio disponible */
+    flex: 1;
     text-align: center;
     padding: 20px;
 }
 
-.text-container h1 {
+.home-title {
     font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 20px;
+    color: #000; /* Color del título cambiado a negro */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Sombra sutil */
 }
 
-.text-container p {
+.subtitle {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    color: #222; /* Color de la frase en gris oscuro */
+    margin-bottom: 20px;
 }
 
 .explore-btn {
@@ -155,7 +162,7 @@
 }
 
 .product-card img {
-    width: 60%; /* Hacer la imagen más pequeña */
+    width: 60%;
     height: auto;
     border-radius: 8px;
 }
