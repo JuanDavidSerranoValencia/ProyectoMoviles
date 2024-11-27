@@ -55,9 +55,4 @@ La estructura de archivos del proyecto es la siguiente:
 - **CSS3**: Estilos visuales y diseño responsivo.
 - **JavaScript**: Funcionalidades interactivas, como el popup y el menú móvil.
 
-## Cómo Empezar
-
-1. **Clona el Repositorio**:
-   ```bash
-   git clone https://github.com/tuusuario/SoulWear.git
 
